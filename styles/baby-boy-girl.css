@@ -1,0 +1,66 @@
+.box{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: white;
+    width:240px;
+}
+.buy{
+    width:217px;
+}
+.linear-animation:hover .price{
+    bottom:70px;
+}
+.linear-animation:hover .buy{
+    margin-top:62px;
+    opacity:1;
+}
+.linear-animation:hover .box{
+    height:380px;
+    margin-bottom:0px;
+    box-shadow: none;
+}
+
+.linear-animation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width:250px;
+    height: 390px;
+    transition: 0.5s;
+}
+.linear-animation:hover{
+    height:390px;
+}
+.linear-animation::before, .linear-animation::after{
+    content:'';
+    position: absolute;
+    width:500px;
+    height:500px;
+    opacity: 0;
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(253, 0, 253));
+}
+.linear-animation:hover::before{
+    animation: animation 5s linear infinite;
+    opacity:1;
+    animation-delay: -2.0s;
+}
+.linear-animation:hover::after{
+    animation: animation 5s linear infinite;
+    animation-delay: -4.5s;
+    opacity:1;
+}
+@keyframes animation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+footer{
+    margin-top:10px;
+}

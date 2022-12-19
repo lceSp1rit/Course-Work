@@ -1,0 +1,24 @@
+.content-container{
+    align-items: flex-start;
+    height: 495px;
+}
+h3{
+    margin-top: 10px;
+    font-family: 'Fredoka One', cursive;
+    font-size:16px;
+}
+.square{
+    top:-310px;
+}
+.square:nth-child(1){
+    top:220px;
+}
+.square:nth-child(2){
+    top:-280px;
+}
+.square:nth-child(3){
+    top:255px;
+}
+.square:nth-child(4){
+    top:-160px;
+}

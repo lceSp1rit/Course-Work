@@ -1,0 +1,9 @@
+.box{
+    border: 2px solid rgb(181, 0, 253);
+}
+.linear-animation::before, .linear-animation::after{
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(232, 0, 253));
+}
+.buy{
+    background: rgb(181, 0, 253);
+}

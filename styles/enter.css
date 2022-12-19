@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Unbounded:wght@300&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background: rgba(92, 30, 54, 0.95);
+}
+main{
+    position: relative;
+    height:80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxes{
+    position: relative;
+}
+.content-container{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    width:320px;
+    border-radius: 10px;
+    height: 360px;
+    background: rgb(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 25px 45px rgb(0,0,0, 0.2);
+    border:1px solid rgba(255,255,255,0.05);
+    color: #fff;
+}
+.square{
+    width:80px;
+    height:80px;
+    top:-270px;
+    left:100px;
+    background: rgb(255, 255, 255, 0.05); 
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 5px;
+    position: absolute;
+    content:'';
+    animation: animation 5s infinite;
+    animation-delay: calc(-1s * var(--i));
+    z-index: -1;
+}
+.square:nth-child(1){
+    width:80px;
+    height:80px;
+    top:170px;
+    left:280px;
+    z-index: 2
+}
+.square:nth-child(2){
+    width:30px;
+    height:30px;
+    top:-190px;
+    left:280px;
+}
+.square:nth-child(3){
+    content: '';
+    width:45px;
+    left:60px;
+    top:200px;
+    height: 45px;
+}
+.square:nth-child(4){
+    width:50px;
+    top:-90px;
+    left:-40px;
+    height: 50px;
+    z-index:2;
+}
+@keyframes animation{
+    0%,100%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+}
+.login{
+    font-size: 28px;
+}
+.mains{
+    position: absolute;
+    top:10px;
+    right:10px;
+    font-family: 'Fredoka One', cursive;
+}
+footer{
+    bottom:0;
+}
+.icon-heads{
+    height:180px;
+}
