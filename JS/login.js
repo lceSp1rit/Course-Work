@@ -67,7 +67,7 @@ button.addEventListener("click", ()=>{
             email1.style = "border:2px solid red;"
         }
         if(k == 1 && j >= 1 && count_email == 0 && count_password == 0){
-            window.location.href = "main.html";
+            window.location.href = "index.html";
         }
     }
 })
